@@ -88,7 +88,7 @@ async function run() {
 
             const updateDoc = {
                 $set: {
-                    status: updatedUser.status,
+                    status: "approve",
                 },
             };
 
