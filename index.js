@@ -79,7 +79,7 @@ async function run() {
         });
 
         //Update Events
-        /* app.put('/update/:id', async (req, res) => {
+        app.put('/update/:id', async (req, res) => {
             const updatedUser = req.body;
             console.log(req.body);
             const id = req.params.id;
@@ -95,7 +95,7 @@ async function run() {
             const result = await eventsCollection.updateOne(filter, updateDoc, options);
             console.log('Updating user', id);
             res.json(result);
-        }) */
+        })
 
 
         //Find Events
